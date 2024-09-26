@@ -1,0 +1,195 @@
+/* styles.css */
+body {
+    background-color: #121212; /* Dark background for a modern look */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Spotify-like font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #161716; /* Dark background for the player */
+    padding: 30px; /* Increased padding for more space */
+    border-radius: 20px; /* More rounded corners for a modern look */
+    width: 90%;
+    max-width: 500px; /* Maximum width of the container */
+    margin: 20px auto;
+    box-shadow: 0px 4px 30px rgba(176, 171, 171, 0.7); /* More prominent shadow */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px; /* Slightly larger font */
+    color: #1db954; /* White color for better contrast */
+}
+
+a {
+    color: #1db954; 
+    text-decoration: none;
+    font-size: 1.0em;
+}
+
+.songs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #181818; /* Dark background for the player */
+    padding: 10px; /* Increased padding for more space */
+    border-radius: 10px; /* More rounded corners for a modern look */
+    width: 90%;
+    max-width: 500px; /* Maximum width of the container */
+    margin: 20px auto;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7); /* More prominent shadow */
+}
+
+.song {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 250px; 
+    text-align: center;
+}
+
+.cover-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the album cover */
+    margin-bottom: 20px;
+}
+
+.song-info {
+    margin-top: 10px; /* Space between cover and song info */
+}
+
+.audio-player {
+    width: 100%; /* Make audio player responsive */
+}
+
+/* Upload Form Styles */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left; /* Align label to the left */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 90%; /* Make inputs responsive */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #404040; /* Darker input background */
+    color: #fff;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+    border-color: #1db954; /* Highlight border on focus */
+    outline: none; /* Remove outline */
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #1db954; /* Spotify green */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth background color transition */
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+.submit-btn:hover {
+    background-color: #1aa34a; /* Darker green on hover */
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    color: #1db954; /* Spotify green */
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Player Controls Styles */
+.player-controls {
+    margin-top: 20px; /* Add some space above the buttons */
+    display: flex; /* Align buttons in a row */
+    justify-content: center; /* Center the buttons */
+}
+
+.control-button {
+    padding: 15px 20px;
+    font-size: 18px; /* Larger font size */
+    background-color: #1db954; /* Spotify green */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.control-button:hover {
+    background-color: #1aa34a; /* Darker green on hover */
+}
+
+.control-button:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 0 3px rgba(29, 185, 84, 0.5); /* Add shadow on focus */
+}
+
+/* Adding symbol styles for controls */
+.prev-button::before {
+    content: '◀'; /* Left arrow */
+    font-size: 24px;
+}
+
+.next-button::after {
+    content: '▶'; /* Right arrow */
+    font-size: 24px;
+}
+
+.shuffle-button::before {
+    content: '🔀'; /* Shuffle symbol */
+    font-size: 24px;
+}
+
+.favorites-button::before {
+    content: '⭐'; /* Star for favorites */
+    font-size: 24px;
+}
+
+.playlist-button::before {
+    content: '➕'; /* Plus for add to playlist */
+    font-size: 24px;
+}
